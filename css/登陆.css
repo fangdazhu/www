@@ -1,0 +1,74 @@
+.box {
+	height: 934px;
+	width: 1920px;
+	text-align: center;
+	background-color: #fafcff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: "微软雅黑"
+}
+
+.img1 {
+	float: left;
+}
+
+.img2 {
+	float: right;
+}
+
+.img3 {
+	float: left;
+}
+
+.img4 {
+	float: left;
+}
+
+.layui3 {
+	width: 450px;
+	height: 45px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+
+.from {
+	position: absolute;
+	top: 300px;
+	right: 400px;
+}
+
+.text2 {
+	margin-top: 40px;
+}
+
+.text {
+	margin-top: 40px;
+	font-size: 17px;
+}
+
+.dl1 {
+	margin-top: 20px;
+	margin-right: 180px;
+}
+
+.dl2 {
+	margin-top: -60px;
+	margin-left: 300px;
+}
+.no{
+	color: red;
+}
+.no3 {
+	font-weight: 600;
+}
+a {
+	color:black;
+}
+.dd1{
+	margin-top: 50px;
+}

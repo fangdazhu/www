@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>ZEALER</title>
+		<link rel="stylesheet" type="text/css" href="css/注册.css" />
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="img1">
+				<img src="img/头部1.gif"/>
+			</div>
+			<div class="img3">
+				<img src="img/头部3.gif"/>
+			</div>
+			<div class="img2">
+				<img src="img/头部2.gif"/>
+			</div>
+			<div class="img4"></a>
+				<a href=""><img src="img/注册.gif"/></a>
+			</div>
+		<form class="from" action="">
+			<div class="label">
+				<div class="text1">
+					<input type="text" id="user"  placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;昵称(由英文字母和数字组成的4-16位字符，以字母开头)" class="layui3"><div id="user_prompt"></div><br />
+				</div>
+				<div class="text2">
+					<input type="text" id="mobile"   placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机号" class="layui3"><div id="mobile_prompt"></div><br />
+				</div>
+				<div class="text3">
+					<input type="text" name="title"   placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输入短信验证码" class="layui3"><br />
+				</div>
+				<div class="text4">
+					<input type="password" id="pwd"   placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设置密码(字母[区分大小写],数字,6-20字符)" class="layui3"><div id="pwd_prompt"></div><br />
+				</div>
+				<div class="text5">
+					<input type="password" id="repwd"   placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;确认密码" class="layui3">
+					<div id="repwd_prompt"></div>
+				</div>
+				<div class="text">
+					<p>注册即代表同意ZEALER <span>《用户协议》</span>和<span>《隐私政策》</span></p>
+				</div>
+				<div class="foot">
+					<a href="登陆.html"><img src="img/底部.gif"/></a>
+				</div>
+			</div>
+		</form>
+			</div>
+			<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+		/*用户名验证*/
+		$("#user").blur(function () {
+			var user = $(this).val();
+			var reg = /^[a-zA-Z][a-zA-Z0-9]{3,15}$/;
+			if (reg.test(user) == false) {
+				$("#user_prompt").html("用户名不正确");
+				return false;
+			}
+			$("#user_prompt").html("");
+			return true;
+		})
+		/*密码验证*/
+		$("#pwd").blur(function () {
+			var pwd = $(this).val();
+			var reg = /^[a-zA-Z0-9]{4,10}$/;
+			if (reg.test(pwd) == false) {
+				$("#pwd_prompt").html("密码不能含有非法字符，长度在4-10之间");
+				return false;
+			}
+			$("#pwd_prompt").html("");
+			return true;
+		})
+		$("#repwd").blur(function () {
+			var repwd = $("#repwd").val();
+			var pwd = $("#pwd").val();
+			if (pwd != repwd) {
+				$("#repwd_prompt").html("两次输入的密码不一致");
+				return false;
+			}
+			$("#repwd_prompt").html("");
+			return true;
+		})
+		/*验证手机号码*/
+		$("#mobile").blur(function () {
+			var mobile = $(this).val();
+			var regMobile = /^1\d{10}$/;
+			if (regMobile.test(mobile) == false) {
+				$("#mobile_prompt").html("手机号码不正确，请重新输入");
+				return false;
+			}
+			$("#mobile_prompt").html("");
+			return true;
+		})
+		})
+			</script>
+	</body>
+
+</html>

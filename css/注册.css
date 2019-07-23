@@ -1,0 +1,59 @@
+.box{
+	height: 934px;
+	width: 1920px;
+    text-align:center;
+    background-color:#fafcff ;
+}
+*{
+	margin: 0 auto;
+}
+.layui3{
+	width: 510px;
+	height: 55px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+.img1{
+	float: left;
+}
+.img2{
+	float: right;
+}
+.img3{
+	float:left;
+}
+.img4{
+	margin-top: -20px;
+}
+.from{
+	padding-top: ;
+}
+.text{
+	margin-top: 20px;
+	font-weight: 200;
+}
+.text1{
+	margin-top: 20px;
+}
+.text2{
+	margin-top: 20px;
+}
+.text3{
+	margin-top: 20px;
+}
+.text4{
+	margin-top: 20px;
+}
+.text5{
+	margin-top: 20px;
+}
+.foot{
+	margin-top: 25px;
+}
+div span{
+	font-weight:400;
+}
+.label input {
+	border-radius:3px;
+	border: 1px solid black;
+}

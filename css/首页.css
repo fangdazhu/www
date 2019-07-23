@@ -1,0 +1,225 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: "微软雅黑"
+}
+
+.box {
+	background-color: black;
+}
+
+.top1 input {
+	float: left;
+	border-radius: 15px;
+	border: 1px solid black;
+}
+
+.text {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	background-color: #2b2b2b;
+	position: absolute;
+	top: 38px;
+}
+
+.top1 img {
+	vertical-align: middle;
+}
+
+.num1 {
+	margin-left: 250px;
+}
+
+.num1 a {
+	color: white;
+	font-size: 12px;
+}
+
+.lunbo {
+	width: 1880px;
+	height: 550px;
+	margin-left: 325px;
+	margin-top: 50px;
+	line-height: 627px;
+}
+
+.no222 {
+	width: 1880px;
+	height: 650px;
+	background-color: #eceff1;
+	width="100%";
+	background-size: 100% 100%;
+}
+
+.img1 {
+	width: 565px;
+	height: 335px;
+	float: left;
+}
+
+.img2 {
+	float: left;
+	width: 706px;
+	height: 200px;
+}
+
+.img2 li {
+	float: left;
+}
+
+.img4 {
+	float: left;
+	widows: 400px;
+	height: 468px;
+}
+
+.img5 {
+	float: left;
+	widows: 565px;
+	height: 335px;
+}
+
+.no333 {
+	float: left;
+	width: 1880px;
+	height: 600px;
+	background-color: #222222;
+	width="100%";
+	background-size: 100% 100%;
+}
+
+.a1 {
+	float: left;
+	width: 565px;
+	height: 600px;
+}
+
+.bb {
+	margin-left: -5px;
+}
+
+.a2 {
+	float: left;
+	width: 1300px;
+	height: 600px;
+}
+
+.a2 li {
+	float: left;
+}
+
+.zz {
+	float: left;
+	margin-top: -508px;
+	margin-left: 270px;
+}
+
+.a3 {
+	float: left;
+	width: 100%;
+	margin-left: -15px;
+	margin-top: -607px;
+	background-color: #222222;
+}
+
+.a3 li {
+	float: left;
+}
+
+.no444 {
+	float: left;
+	width: 1880px;
+	height: 480px;
+	background-color: #000000;
+	position: absolute;
+	bottom: -1795px;
+	color: white;
+}
+
+.no444 h3 {
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.no444 ul li p {
+	text-align: left;
+	line-height: 25px;
+	font-weight: 5px;
+}
+
+.no444 p a {
+	font-size: 16px;
+	font-family: arial;
+	margin-top: 10px;
+	color: darkgray;
+}
+
+.f {
+	margin-left: 650px;
+	margin-top: -188px;
+}
+
+.f1 {
+	margin-left: 865px;
+	margin-top: -140px;
+}
+
+.f2 {
+	margin-left: 1090px;
+	margin-top: -140px;
+}
+
+.f3 {
+	margin-left: 1300px;
+	margin-top: -155px;
+}
+
+.no555 {
+	float: left;
+	width: 1880px;
+	height: 380px;
+	background-color: #000000;
+	position: absolute;
+	bottom: -2030px;
+	color: darkgray;
+}
+
+.tt {
+	width: 880px;
+	height: 100px;
+	margin-left: 520px;
+	margin-top: -20px;
+	color: darkgray;
+}
+
+.nn li {
+	float: left;
+	text-indent: 50px;
+}
+
+.no555 p {
+	margin-left: 380px;
+}
+
+.nn li a {
+	font-size: 16px;
+	font-family: arial;
+	margin-top: 10px;
+	color: darkgray;
+}
+
+.i1:hover {
+	opacity:0.8;
+}
+
+.img4:hover {
+	transform: scale(1.1);
+}
+.i2:hover{
+	transform: rotate(999999deg);
+	transition: transform 20s linear;
+	border-radius:50% ;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/登陆.css" />
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="img1">
+				<img src="img/头部1.gif" />
+			</div>
+			<div class="img3">
+				<img src="img/头部3.gif" />
+			</div>
+			<div class="img2">
+				<img src="img/头部2.gif" />
+			</div>
+			<div class="img4">
+				<img src="img/登陆.gif" />
+			</div>
+			<form class="from" action="">
+				<div class="label">
+					<div class="text1">
+						<input type="text" id="email" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机号邮箱" class="layui3"><br />
+						<div id="email_prompt"></div>
+					</div>
+					<div class="text2">
+						<input type="password" name="title" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码" class="layui3"><br />
+					</div>
+					<div class="text">
+						<p class="no">* 因账号系统升级，手机号/邮箱账号登录需要重置密码</p> <br />
+						<p class="no1">
+							<a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp 忘记密码? </p>
+						</a>
+					</div>
+					<div class="dl1">
+						<a href=""><img src="img/登陆1.gif" /></a>
+					</div>
+					<div class="dl2">
+						<a href="首页.html"><img src="img/登陆2.gif" /></a>
+					</div>
+					<div class="no2">
+						<p class="text2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还没有账号，<span class="no3"><a href="注册.html">立即注册</a></span>，或使用以下方式登录</p>
+					</div>
+					<div class="dd1">
+						<a href=""><img src="img/底部1.gif" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<img src="img/底部2.gif" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<img src="img/底部3.gif" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<img src="img/底部4.gif" /></a>
+					</div>
+			</form>
+			</div>
+			<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$("#email").blur(function() {
+						var email = $(this).val();
+						var reg = /^\w+@\w+(\.[a-zA-Z]{2,3}){1,2}$/;
+						if(reg.test(email) == false) {
+							$("#email_prompt").html("Email格式不正确，例如web@sohu.com");
+							return false;
+						}
+						$("#email_prompt").html("");
+						return true;
+					})
+				})
+			</script>
+	</body>
+</html>
